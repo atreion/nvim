@@ -13,7 +13,7 @@ return {
       }
 
       -- setup must be called before loading
-      vim.cmd.colorscheme 'catppuccin'
+      -- vim.cmd.colorscheme 'catppuccin'
     end,
   },
 
@@ -36,6 +36,14 @@ return {
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       -- vim.cmd.colorscheme 'tokyonight-night'
+    end,
+  },
+
+  {
+    'olimorris/onedarkpro.nvim',
+    priority = 1000,
+    config = function()
+      vim.cmd 'colorscheme onedark'
     end,
   },
 }
